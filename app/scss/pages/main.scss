@@ -1,0 +1,127 @@
+header {
+  .container {
+    margin-top: 11px;
+     .row-flex {
+       align-items: center;
+       justify-content: space-between;
+       padding: 0 20px;
+       .right-head {
+         .language {
+           display: flex;
+           align-items: center;
+           p{
+             @include fontStyle('Open Sans', 1.4rem, #ffffff, 300);
+             margin-right: 8px;
+           }
+           a{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             width: 28px;
+             height: 28px;
+             border: 1px solid #ffffff;
+             border-radius: 3px;
+             text-decoration: none;
+             text-transform: uppercase;
+             margin-left: 7px;
+             @include fontStyle('Open Sans', 1.2rem, #ffffff, 300)
+           }
+           a.active, a:focus, a:hover {
+             background-color: #ffffff;
+             color: #94c11f;
+             transition: .2s;
+           }
+         }
+       }
+     }
+  }
+}
+main {
+  .container{
+    .row-flex {
+      .find-home {
+        background-image: url("../../images/main-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        form{
+          width: 520px;
+          margin: 0 auto;
+          h1.text-center{
+            @include fontStyle('Montserrat', 3rem, #ffffff, 600)
+          }
+          .filters {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 23px;
+            select.form-element {
+              width: 164px;
+            }
+          }
+          .phrase {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            span{
+              content: '';
+              position: absolute;
+              width: 20px;
+              height:20px;
+              background-image: url("../../images/search.png");
+              top: 50%;
+              transform: translate(0, -50%);
+              left: 10px;
+            }
+            input.form-element {
+              width: 424px;
+              padding-left: 45px;
+            }
+            input:focus{
+              outline: none;
+            }
+            button{
+              width: 84px;
+              height: 46px;
+              background-color: #94c11f;
+              border-radius: 5px;
+              border: none;
+              @include fontStyle('Montserrat', 1.8rem, #ffffff, 400)
+            }
+
+          }
+        }
+      }
+      .recommended-house {
+        align-items: center;
+        justify-content: center;
+        h2{
+          @include fontStyle('Montserrat', 2.2rem, #b8b8b8, 600)
+          margin-bottom: 30px;
+        }
+        div {
+          max-width: 440px;
+          max-height: 310px;
+          overflow: hidden;
+          img{
+            transition: 1s;
+          }
+          img:hover{
+            transform: scale(1.1);
+            transition: 3s;
+          }
+        }
+        p{
+          @include fontStyle('Montserrat', 2.2rem, #3b3b3a, 600)
+          margin: 35px 0 25px 0;
+        }
+        button{
+          width: 287px;
+          height: 51px;
+        }
+      }
+    }
+  }
+}

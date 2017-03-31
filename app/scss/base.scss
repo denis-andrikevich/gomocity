@@ -1,44 +1,101 @@
 /*-------------------------------------------------
 SMACSS: BASE
 -------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
 html {
-    height: 100%;
-    font-size: 10px;
+  height: 100%;
+  font-size: 10px;
 }
 
-body{
-    min-height: 100%;
-    height: 100%;
+body {
+  min-height: 100%;
+  height: 100%;
 }
 
-#app{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-header{
-    height: 60px;
-    background-color: green;
+header {
+  height: 60px;
+  background-color: #94c11f;
 }
 
-main{
-    flex-grow: 1;
+main {
+  flex-grow: 1;
 }
 
-.container{
-    min-width: 1240px;
+.container {
+  min-width: 1240px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.flex-column{
-    display: flex;
-    flex-direction: column;
+.row-flex {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.flex-height{
-    flex-grow: 1;
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.app-filter{
-    @include fontStyle('Montserrat', 2rem, #000, 300);
+.half {
+  flex-basis: 50%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-height {
+  flex-grow: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.app-filter {
+  @include fontStyle('Montserrat', 2rem, #000, 300);
+}
+
+.form-element {
+  background-color: #ffffff;
+  height: 46px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 0 15px;
+  @include fontStyle('Montserrat', 1.6rem, #656565, 300)
+}
+
+.green-btn {
+  background-color: #94c11f;
+  border-radius: 5px;
+  border: none;
+  @include fontStyle('Montserrat', 1.8rem, #ffffff, 400)
+}
+
+.green-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #ffffff;
+  color: #94c11f;
+  transition: .2s;
 }
