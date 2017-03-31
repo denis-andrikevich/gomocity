@@ -23,3 +23,80 @@ section {
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
 -------------------------------------------------*/
+
+
+/* Ширина слайдера */
+
+.ui-slider {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 15px;   
+    height: 15px; 
+    border-radius: 50%;
+    border: 2px solid #94c11f;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+
+}
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+
+.ui-slider-horizontal {
+     height: 3px; /* задаем высоту согласно дизайна */
+}
+
+/* позиционируем ползунки */
+
+.ui-slider-horizontal .ui-slider-handle { 
+    top: -8px;
+    margin-left: -6px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+/* оформление полосы по которой ходит ползунок */
+
+.ui-widget-content { 
+    border: 3px solid #e1e1e1;
+    background: #e1e1e1;
+}
+
+/* оформление активного участка (между двумя ползунками) */
+
+.ui-widget-header { 
+    border: 1px solid #D4D4D4;
+    background: #94c11f;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}

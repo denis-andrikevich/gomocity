@@ -1,33 +1,102 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
     <title>gomocity</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="favicon.ico">
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="css/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet"
+          href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700"
+          rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
         <header></header>
 
         <main class="flex-column">
             <div class="app-filter">
-                filters
+                <form>
+                    <div class="container">
+                        <div class="row-flex">
+                            <div class="col half">
+                                <div class="filters-wrap">
+                                    <div class="filters-wrap__item property">
+                                        <select>
+                                            <option value="0">Property type</option>
+                                            <option value="1">Home</option>
+                                            <option value="2">Town Home</option>
+                                            <option value="3">Condominium</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters-wrap__item for">
+                                        <select>
+                                            <option value="0">For</option>
+                                            <option value="1">Rent</option>
+                                            <option value="1">Sale</option>
+                                        </select>
+                                    </div>
+                                    <div class="filters-wrap__item price">
+                                        <div class="nice-select dropdown">
+                                            <span class="current">Price</span>
+                                            <div class="dropdown list">
+                                                <div id="slider"></div>
+                                                <div class="flex flex-between range-values">
+                                                    <div>
+                                                        <span>Min price:</span>
+                                                        <span id="priceMin">$10k</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>Max price:</span>
+                                                        <span id="priceMax">$10k</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col half">
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="main-content flex-height">
-                <div class="col-1">
-                    col1
-                </div>
-                <div class="col-2">
-                    col2
+            <div class="main-content flex-height flex-column">
+                <div class="container flex-height flex-column">
+                    <div class="row-flex flex-height">
+                        <div class="col half">
+                        </div>
+                        <div class="col half flex-column">
+                            <div id="map"
+                                 class="flex-height"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
-    <script src="js/application.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&.js"></script>
+    <script src="js/jquery-3.2.0.min.js"
+            type="text/javascript"
+            charset="utf-8"></script>
+    <script src="js/jquery-ui.min.js"
+            type="text/javascript"
+            charset="utf-8"></script>
+    <script src="js/jquery.nice-select.min.js"
+            type="text/javascript"
+            charset="utf-8"></script>
+    <script src="js/application.js"
+            type="text/javascript"
+            charset="utf-8"></script>
 </body>
+
 </html>

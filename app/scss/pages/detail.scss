@@ -1,3 +1,42 @@
-body{
-    display: none;
+.app-filter{
+    .filters-wrap{
+        display: flex;
+
+        &__item{
+            &.property{
+                width: 165px;
+            }
+
+            &.for{
+                width: 85px;
+            }
+
+            &:not(:last-child){
+                margin-right: 8px;
+            }
+
+            .nice-select{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.nice-select{
+    .list.dropdown{
+        padding: 20px 15px;
+    }
+
+    .range-values{
+        &>div{
+            span:last-child{
+                font-weight: 600;
+
+                margin-top: 7px;
+            }
+        }
+        span{
+            display: block;
+        }
+    }
 }
