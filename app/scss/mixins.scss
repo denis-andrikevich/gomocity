@@ -89,8 +89,9 @@ $browser-context: 16; // Default
  MIXIN :: FONT STYLE
 -------------------------------------------------*/
 //Font styling font-family, font-size and color of the font
-@mixin fontStyle($fontFamily, $fontSize, $fontColor) {
-  font-family: $fontFamily;
+@mixin fontStyle($fontFamily, $fontSize, $fontColor, $fontWeight) {
+  font-family: $fontFamily, Arial, Helvetica, sans-serif;
   font-size: $fontSize;
   color: $fontColor;
+  font-weight: $fontWeight;
 }
