@@ -2215,8 +2215,16 @@ main .container .row-flex .find-home {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-top: 23px; }
-      main .container .row-flex .find-home form .filters select.form-element {
+      main .container .row-flex .find-home form .filters .field {
         width: 164px; }
+        main .container .row-flex .find-home form .filters .field .nice-select {
+          width: 100%;
+          font-family: "Montserrat", Arial, Helvetica, sans-serif;
+          font-size: 1.6rem;
+          color: #656565;
+          font-weight: 300; }
+          main .container .row-flex .find-home form .filters .field .nice-select .list {
+            width: 100%; }
     main .container .row-flex .find-home form .phrase {
       position: relative;
       display: -webkit-box;

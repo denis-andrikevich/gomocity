@@ -56,8 +56,15 @@ main {
             display: flex;
             justify-content: space-between;
             margin-top: 23px;
-            select.form-element {
+            .field {
               width: 164px;
+              .nice-select {
+                width: 100%;
+                @include fontStyle('Montserrat', 1.6rem, #656565, 300);
+                .list {
+                  width: 100%;
+                }
+              }
             }
           }
           .phrase {
