@@ -126,6 +126,56 @@ body {
 header {
   height: 60px;
   background-color: #94c11f; }
+  header .container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    header .container .row-flex {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 20px; }
+      header .container .row-flex .right-head .language {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        header .container .row-flex .right-head .language p {
+          font-family: "Open Sans", Arial, Helvetica, sans-serif;
+          font-size: 1.4rem;
+          color: #ffffff;
+          font-weight: 300;
+          margin-right: 8px; }
+        header .container .row-flex .right-head .language a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          width: 28px;
+          height: 28px;
+          border: 1px solid #ffffff;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin-left: 7px;
+          font-family: "Open Sans", Arial, Helvetica, sans-serif;
+          font-size: 1.2rem;
+          color: #ffffff;
+          font-weight: 300; }
+        header .container .row-flex .right-head .language a.active, header .container .row-flex .right-head .language a:focus, header .container .row-flex .right-head .language a:hover {
+          background-color: #ffffff;
+          color: #94c11f;
+          -webkit-transition: .2s;
+                  transition: .2s; }
 
 main {
   -webkit-box-flex: 1;
@@ -2138,56 +2188,6 @@ SMACSS: LAYOUT - FOOTER
 .nice-select .range-values span {
   display: block; }
 
-header .container {
-  margin-top: 11px; }
-  header .container .row-flex {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 20px; }
-    header .container .row-flex .right-head .language {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      header .container .row-flex .right-head .language p {
-        font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        font-size: 1.4rem;
-        color: #ffffff;
-        font-weight: 300;
-        margin-right: 8px; }
-      header .container .row-flex .right-head .language a {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        width: 28px;
-        height: 28px;
-        border: 1px solid #ffffff;
-        border-radius: 3px;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-left: 7px;
-        font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        font-size: 1.2rem;
-        color: #ffffff;
-        font-weight: 300; }
-      header .container .row-flex .right-head .language a.active, header .container .row-flex .right-head .language a:focus, header .container .row-flex .right-head .language a:hover {
-        background-color: #ffffff;
-        color: #94c11f;
-        -webkit-transition: .2s;
-                transition: .2s; }
-
 main .container .row-flex .find-home {
   background-image: url("../../images/main-img.jpg");
   background-repeat: no-repeat;
@@ -2215,8 +2215,16 @@ main .container .row-flex .find-home {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-top: 23px; }
-      main .container .row-flex .find-home form .filters select.form-element {
+      main .container .row-flex .find-home form .filters .field {
         width: 164px; }
+        main .container .row-flex .find-home form .filters .field .nice-select {
+          width: 100%;
+          font-family: "Montserrat", Arial, Helvetica, sans-serif;
+          font-size: 1.6rem;
+          color: #656565;
+          font-weight: 300; }
+          main .container .row-flex .find-home form .filters .field .nice-select .list {
+            width: 100%; }
     main .container .row-flex .find-home form .phrase {
       position: relative;
       display: -webkit-box;
