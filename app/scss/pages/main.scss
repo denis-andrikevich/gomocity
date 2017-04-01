@@ -84,7 +84,7 @@ main {
           }
         }
         p{
-          @include fontStyle('Montserrat', 2.2rem, #3b3b3a, 600)
+          @include fontStyle('Montserrat', 2.2rem, #3b3b3a, 600);
           margin: 35px 0 25px 0;
         }
         button{

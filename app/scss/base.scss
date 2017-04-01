@@ -1,8 +1,18 @@
 /*-------------------------------------------------
 SMACSS: BASE
 -------------------------------------------------*/
+.gm-style-iw + div {
+  display: none!important;
+}
+.gm-style-iw{
+  padding: 10px;
+}
 * {
   box-sizing: border-box;
+}
+
+select{
+  display: none;
 }
 
 button:focus {
@@ -130,7 +140,7 @@ main {
 .app-filter{
     box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.11);
     background-color: #fff;
-    padding: 8px 0;
+    height: 58px;
     @include fontStyle('Montserrat', 2rem, #000, 300);
 }
 .active {
@@ -221,7 +231,7 @@ main {
         .section-header{
           margin-bottom: 20px;
         }
-        
+
         .checker + .checker{
           margin-left: 27px;
         }
@@ -283,7 +293,28 @@ main {
 }
 
 
+/* search buttons start */
 
+.positive-btn {
+  @include fontStyle('Montserrat', 1.4rem, #94c11f, 400);
+  border:none;
+  background: transparent;
+  white-space: nowrap;
+  padding: 0 20px;
+  margin-left: 10px;
+}
+
+.btn-search {
+  border: 2px solid #94c11f;
+  border-radius: 3px;
+  background: transparent;
+  padding: 10px 20px;
+}
+.btn-search:hover, .positive-btn:hover{
+  cursor: pointer;
+}
+
+/* search buttons end */
 
 /* icons  start */
 .ico{
