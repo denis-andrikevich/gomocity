@@ -1,78 +1,106 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>gomocity</title>
 
   <!-- CSS files -->
-  <link rel="stylesheet" href="css/master.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+  <link rel="stylesheet"
+        href="css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700"
+        rel="stylesheet">
 </head>
+
 <body>
-<div id="app">
-  <header>
-    <div class="container">
-      <div class="row-flex">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="">
-          </a>
-        </div>
-        <div class="right-head">
-          <div class="language">
-            <p>Change Language</p>
-            <a href="#" class="active">en</a>
-            <a href="#">th</a>
-            <a href="#">cn</a>
+  <div id="app">
+    <header>
+      <div class="container">
+        <div class="row-flex">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png"
+                   alt="">
+            </a>
+          </div>
+          <div class="right-head">
+            <div class="language">
+              <p>Change Language</p>
+              <a href="#"
+                 class="active">en</a>
+              <a href="#">th</a>
+              <a href="#">cn</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="flex-height flex-column">
-    <div class="container flex-height flex-column">
-      <div class="row-flex flex-height">
-        <div class="col half find-home">
-          <form action="">
-            <h1 class="text-center">Find the right home for you</h1>
-            <div class="filters">
-              <select name="" id="home1" class="form-element">
+    <main class="flex-height flex-column">
+      <div class="container flex-height flex-column">
+        <div class="row-flex flex-height">
+          <div class="col half find-home">
+            <form action="">
+              <h1 class="text-center">Find the right home for you</h1>
+              <div class="filters">
+                <select name=""
+                        id="home1"
+                        class="form-element">
                 <option value="">Filter1</option>
                 <option value="">Filter1</option>
                 <option value="">Filter1</option>
               </select>
-              <select name="" id="home2" class="form-element">
+                <select name=""
+                        id="home2"
+                        class="form-element">
                 <option value="">Filter2</option>
                 <option value="">Filter2</option>
                 <option value="">Filter2</option>
               </select>
-              <select name="" id="home3" class="form-element">
+                <select name=""
+                        id="home3"
+                        class="form-element">
                 <option value="">Filter3</option>
                 <option value="">Filter3</option>
                 <option value="">Filter3</option>
               </select>
-            </div>
-            <div class="phrase">
-              <span></span>
-              <input type="text" class="form-element" placeholder="For ex. DICaprio house">
-              <button type="submit" class="green-btn">Go</button>
-            </div>
-          </form>
-        </div>
-        <div class="col half flex-column recommended-house">
+              </div>
+              <div class="phrase">
+                <span></span>
+                <input type="text"
+                       class="form-element"
+                       placeholder="For ex. DICaprio house">
+                <button type="submit"
+                        class="green-btn">Go</button>
+              </div>
+            </form>
+          </div>
+          <div class="col half flex-column recommended-house">
             <h2>Recommended house</h2>
             <div>
-              <img src="images/house-pic.jpg" alt="">
+              <img src="images/house-pic.jpg"
+                   alt="">
             </div>
             <p class="text-center">Welcome to Leonardo <br> DiCaprio house</p>
             <button class="green-btn">Click for VR360</button>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-</div>
-<script src="js/application.js" type="text/javascript" charset="utf-8"></script>
+    </main>
+  </div>
+  <script src="http://maps.google.com/maps/api/js?sensor=false&.js"></script>
+  <script src="js/jquery-3.2.0.min.js"
+          type="text/javascript"
+          charset="utf-8"></script>
+  <script src="js/jquery-ui.min.js"
+          type="text/javascript"
+          charset="utf-8"></script>
+  <script src="js/jquery.nice-select.min.js"
+          type="text/javascript"
+          charset="utf-8"></script>
+  <script src="js/application.js"
+          type="text/javascript"
+          charset="utf-8"></script>
 </body>
+
 </html>

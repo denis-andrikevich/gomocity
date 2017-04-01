@@ -111,11 +111,7 @@ html {
 
 body {
   min-height: 100%;
-  height: 100%;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  color: inherit;
-  font-weight: 300; }
+  height: 100%; }
 
 #app {
   min-height: 100%;
@@ -140,8 +136,6 @@ main {
   min-width: 1240px;
   padding-left: 15px;
   padding-right: 15px; }
-<<<<<<< HEAD
-=======
 
 .row-flex {
   display: -webkit-box;
@@ -157,7 +151,6 @@ main {
 .half {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
->>>>>>> vadim
 
 .flex-column {
   display: -webkit-box;
@@ -176,10 +169,46 @@ main {
 .text-center {
   text-align: center; }
 
+.form-element {
+  background-color: #ffffff;
+  height: 46px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #656565;
+  font-weight: 300; }
+
+.green-btn {
+  background-color: #94c11f;
+  border-radius: 5px;
+  border: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 400; }
+
+.green-btn:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  cursor: pointer; }
+
 .app-filter {
   box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.11);
   background-color: #fff;
-  padding: 8px 0; }
+  padding: 8px 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #000;
+  font-weight: 300; }
+
+.active {
+  background-color: #ffffff;
+  color: #94c11f;
+  -webkit-transition: .2s;
+          transition: .2s; }
 
 .row-flex {
   display: -webkit-box;
@@ -2016,38 +2045,6 @@ a.ui-button:active,
 .ui-widget-shadow {
   box-shadow: 0px 0px 5px #666666; }
 
-.form-element {
-  background-color: #ffffff;
-  height: 46px;
-  border: 2px solid #e1e1e1;
-  border-radius: 5px;
-  padding: 0 15px;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  color: #656565;
-  font-weight: 300; }
-
-.green-btn {
-  background-color: #94c11f;
-  border-radius: 5px;
-  border: none;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-  color: #ffffff;
-  font-weight: 400; }
-
-.green-btn:hover {
-  opacity: 0.8;
-  -webkit-transition: 0.3s;
-          transition: 0.3s;
-  cursor: pointer; }
-
-.active {
-  background-color: #ffffff;
-  color: #94c11f;
-  -webkit-transition: .2s;
-          transition: .2s; }
-
 /*-------------------------------------------------
 SMACSS: LAYOUT - COMMON
 -------------------------------------------------*/
@@ -2060,7 +2057,6 @@ SMACSS: LAYOUT - SECTION
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
 -------------------------------------------------*/
-<<<<<<< HEAD
 /* Ширина слайдера */
 .ui-slider {
   position: relative;
@@ -2141,7 +2137,7 @@ SMACSS: LAYOUT - FOOTER
 
 .nice-select .range-values span {
   display: block; }
-=======
+
 header .container {
   margin-top: 11px; }
   header .container .row-flex {
@@ -2290,4 +2286,3 @@ main .container .row-flex .recommended-house {
   main .container .row-flex .recommended-house button {
     width: 287px;
     height: 51px; }
->>>>>>> vadim
