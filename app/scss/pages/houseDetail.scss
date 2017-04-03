@@ -1,0 +1,133 @@
+/*---- modal window for previewing a big house pic--- ------*/
+
+
+
+
+/*---- modal window for previewing a big house pic--- ------*/
+
+
+.house-review {
+  overflow: hidden;
+  position: relative;
+  height: 555px;
+  max-width: 100%;
+
+
+  .custom-carousel {
+
+    .owl-theme {
+      .owl-nav {
+        /*default owl-theme theme reset .disabled:hover links */
+        [class*='owl-'] {
+          transition: all .3s ease;
+          &.disabled:hover {
+            background-color: #D6D6D6;
+          }
+        }
+
+      }
+    }
+
+    //arrows on first carousel
+    #sync1.owl-theme {
+      position: absolute;
+      z-index: 6;
+      .owl-nav {
+        display: none;
+      }
+      .owl-dots {
+        display: none;
+      }
+      .owl-item.active {
+              .item {
+                    img {
+                        transition: 2s;
+                    }
+                    img:hover {
+                          transform: scale(1.05);
+                          transition: 7s;
+                    }
+              }
+        }
+    }
+
+    .container {
+
+      .carousel_wrapper {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 30px;
+      }
+    }
+
+    .plus_size {
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      margin-right: 10px;
+      border-radius: 3px;
+      background-color: rgba(148, 193, 31, 0.8);
+      padding: 5px;
+      transform: scale(1);
+    }
+    .plus_size:hover img {
+      transform: scale(1.05);
+    }
+
+    #sync2 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      z-index: 8;
+      position: absolute;
+      bottom: 30px;
+
+      .owl-stage-outer {
+
+        .owl-stage {
+          max-width: 200px;
+
+          .owl-item {
+            width: 88px !important;
+            height: 88px;
+            overflow: hidden;
+            border-radius: 3px;
+
+            .item {
+              border: 2px solid #ffffff;
+              border-radius: 3px;
+              overflow: hidden;
+            }
+
+            .item:hover {
+              cursor: pointer;
+            }
+          }
+
+          .owl-item:not(.current){
+              .item{
+                background-color: #2b2b2b;
+                img {
+                    opacity: 0.3;
+                    transition: 0.5s;
+                }
+                img:hover {
+                    cursor: default;
+                    pointer-events: none;
+                }
+              }
+          }
+
+          .owl-item:not(:last-child) {
+            margin-right: 20px;
+
+          }
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>gomocity</title>
+  <link rel="shortcut icon"
+        type="image/x-icon"
+        href="favicon.ico">
+
+  <!-- CSS files -->
+  <link rel="stylesheet"
+        href="css/master.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600"
+        rel="stylesheet">
+
+  <!--for carousel-->
+  <link rel="stylesheet"
+        href="css/owl.carousel.min.css">
+  <link rel="stylesheet"
+        href="css/owl.theme.default.css">
+
+  <!--for modal window-->
+  <link rel="stylesheet"
+        href="css/remodal.css">
+  <link rel="stylesheet"
+        href="css/remodal-default-theme.css">
+
+</head>
+
+<body>
+<div id="app">
+  <header class="flex-column">
+    <div class="flex-height flex-column">
+      <div class="container flex-height flex-column">
+        <div class="row-flex">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png"
+                   alt="">
+            </a>
+          </div>
+          <div class="right-head row-flex">
+            <div class="favourite-homes row-flex">
+              <a href="#"></a>
+              <h6>Favourite homes</h6>
+              <div class="likes">
+                <a href="#">5</a>
+              </div>
+            </div>
+            <div class="language">
+              <p>Change Language</p>
+              <a href="#"
+                 class="active">en</a>
+              <a href="#">th</a>
+              <a href="#">cn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-column">
+
+    <div class="flex-height">
+
+      <div class="house-review">
+
+        <div class="custom-carousel">
+
+          <div id="sync1" class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="images/big_house_pic.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="images/big_house_pic.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="container">
+                <div class="carousel_wrapper">
+                        <a href="#modal" class="plus_size" id="plus_size"><img src="images/icons/size_ic.png" alt=""></a>
+                        <div id="sync2" class="owl-carousel owl-theme disable-owl-swipe">
+                          <div class="item disable-owl-swipe">
+                            <img src="images/sma_house_prev.jpg" alt="">
+                          </div>
+                          <div class="item disable-owl-swipe">
+                            <img src="images/sma_house_prev.jpg" alt="">
+                          </div>
+                        </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<!--MODAL WINDOW TO SHOW BIG HOUSE PIC-->
+      <div class="container">
+        <div class="remodal-bg" id="remodal">
+          <div class="remodal" data-remodal-id="modal">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <img src="images/big_house_pic.jpg" alt="">
+          </div>
+        </div>
+      </div>
+<!--MODAL WINDOW TO SHOW BIG HOUSE PIC-->
+
+  </main>
+</div>
+<script src="http://maps.google.com/maps/api/js?sensor=false&.js"></script>
+<script src="js/jquery-3.2.0.min.js"
+        type="text/javascript"
+        charset="utf-8"></script>
+<script src="js/jquery-ui.min.js"
+        type="text/javascript"
+        charset="utf-8"></script>
+<script src="js/jquery.nice-select.min.js"
+        type="text/javascript"
+        charset="utf-8"></script>
+<script src="js/application.js"
+        type="text/javascript"
+        charset="utf-8"></script>
+<script src="js/owl.carousel.min.js"
+        type="text/javascript"
+        charset="utf-8"></script>
+<script src="js/remodal.min.js"
+        type="text/javascript"
+        charset="utf-8"></script>
+
+<script>
+  $(document).ready(function () {
+
+    var sync1 = $("#sync1");
+    var sync2 = $("#sync2");
+    var slidesPerPage = 4; //globaly define number of elements per page
+    var syncedSecondary = true;
+
+    $(".disable-owl-swipe").on("touchstart mousedown", function (e) {
+      // Prevent carousel swipe
+      e.stopPropagation();
+    });
+
+    sync1.owlCarousel({
+      items: 1,
+      slideSpeed: 2000,
+      nav: true,
+      autoplay: true,
+      dots: true,
+      loop: true,
+      responsiveRefreshRate: 200,
+      navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    }).on('changed.owl.carousel', syncPosition);
+
+    sync2
+      .on('initialized.owl.carousel', function () {
+        sync2.find(".owl-item").eq(0).addClass("current");
+      })
+      .owlCarousel({
+        items: slidesPerPage,
+        dots: true,
+        nav: true,
+        smartSpeed: 200,
+        slideSpeed: 500,
+        slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+        responsiveRefreshRate: 100
+      }).on('changed.owl.carousel', syncPosition2);
+
+    function syncPosition(el) {
+      //if you set loop to false, you have to restore this next line
+      //var current = el.item.index;
+
+      //if you disable loop you have to comment this block
+      var count = el.item.count - 1;
+      var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+
+      if (current < 0) {
+        current = count;
+      }
+      if (current > count) {
+        current = 0;
+      }
+
+      //end block
+
+      sync2
+        .find(".owl-item")
+        .removeClass("current")
+        .eq(current)
+        .addClass("current");
+      var onscreen = sync2.find('.owl-item.active').length - 1;
+      var start = sync2.find('.owl-item.active').first().index();
+      var end = sync2.find('.owl-item.active').last().index();
+
+      if (current > end) {
+        sync2.data('owl.carousel').to(current, 100, true);
+      }
+      if (current < start) {
+        sync2.data('owl.carousel').to(current - onscreen, 100, true);
+      }
+    }
+
+    function syncPosition2(el) {
+      if (syncedSecondary) {
+        var number = el.item.index;
+        sync1.data('owl.carousel').to(number, 100, true);
+      }
+    }
+
+    sync2.on("click", ".owl-item", function (e) {
+      e.preventDefault();
+      var number = $(this).index();
+      sync1.data('owl.carousel').to(number, 300, true);
+    });
+
+    $("#plus_size").click(function () {
+
+    })
+
+
+  });
+</script>
+
+
+</body>
+
+</html>

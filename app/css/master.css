@@ -2525,6 +2525,101 @@ header .right-head .favourite-homes {
       margin-bottom: 40px;
       border-bottom: 1px solid #b7b7b7; }
 
+/*---- modal window for previewing a big house pic--- ------*/
+/*---- modal window for previewing a big house pic--- ------*/
+.house-review {
+  overflow: hidden;
+  position: relative;
+  height: 555px;
+  max-width: 100%; }
+  .house-review .custom-carousel .owl-theme .owl-nav {
+    /*default owl-theme theme reset .disabled:hover links */ }
+    .house-review .custom-carousel .owl-theme .owl-nav [class*='owl-'] {
+      -webkit-transition: all .3s ease;
+              transition: all .3s ease; }
+      .house-review .custom-carousel .owl-theme .owl-nav [class*='owl-'].disabled:hover {
+        background-color: #D6D6D6; }
+  .house-review .custom-carousel #sync1.owl-theme {
+    position: absolute;
+    z-index: 6; }
+    .house-review .custom-carousel #sync1.owl-theme .owl-nav {
+      display: none; }
+    .house-review .custom-carousel #sync1.owl-theme .owl-dots {
+      display: none; }
+    .house-review .custom-carousel #sync1.owl-theme .owl-item.active .item img {
+      -webkit-transition: 2s;
+              transition: 2s; }
+    .house-review .custom-carousel #sync1.owl-theme .owl-item.active .item img:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-transition: 7s;
+              transition: 7s; }
+  .house-review .custom-carousel .container .carousel_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-top: 30px; }
+  .house-review .custom-carousel .plus_size {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: rgba(148, 193, 31, 0.8);
+    padding: 5px;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .house-review .custom-carousel .plus_size:hover img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  .house-review .custom-carousel #sync2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    z-index: 8;
+    position: absolute;
+    bottom: 30px; }
+    .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage {
+      max-width: 200px; }
+      .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item {
+        width: 88px !important;
+        height: 88px;
+        overflow: hidden;
+        border-radius: 3px; }
+        .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item .item {
+          border: 2px solid #ffffff;
+          border-radius: 3px;
+          overflow: hidden; }
+        .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item .item:hover {
+          cursor: pointer; }
+      .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item:not(.current) .item {
+        background-color: #2b2b2b; }
+        .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item:not(.current) .item img {
+          opacity: 0.3;
+          -webkit-transition: 0.5s;
+                  transition: 0.5s; }
+        .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item:not(.current) .item img:hover {
+          cursor: default;
+          pointer-events: none; }
+      .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item:not(:last-child) {
+        margin-right: 20px; }
+
 main .container .row-flex .find-home {
   background-image: url("../images/main-img.jpg");
   background-repeat: no-repeat;
