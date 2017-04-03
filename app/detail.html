@@ -419,7 +419,6 @@
                   price: '$2',
                   distance: '45m'
                 }
-
             },
             {
                 image: 'images/house.png',
@@ -652,9 +651,7 @@
         });
 
         var infowindow = new google.maps.InfoWindow();
-
         var customMarker = 'images/icons/marker.png';
-
 
         function createMarker(latlng, html) {
             var marker = new google.maps.Marker({
@@ -691,9 +688,6 @@
 
             createMarker(new google.maps.LatLng(locations[i].location.w, locations[i].location.h), html)
         }
-
-
-
     </script>
 </body>
 
