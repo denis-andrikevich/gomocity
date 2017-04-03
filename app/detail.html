@@ -414,7 +414,12 @@
                 location: {
                     w: "39.9695601",
                     h: "-75.1395161"
+                },
+                markerInfo: {
+                  price: '$2',
+                  distance: '45m'
                 }
+
             },
             {
                 image: 'images/house.png',
@@ -431,6 +436,10 @@
                 location: {
                     w: "40.034038",
                     h: "-75.145223"
+                },
+                markerInfo: {
+                    price: '$2',
+                    distance: '45m'
                 }
             },
             {
@@ -448,6 +457,10 @@
                 location: {
                     w: "39.9713524",
                     h: "-75.1590360"
+                },
+                markerInfo: {
+                  price: '$2',
+                  distance: '45m'
                 }
             }
         ];
@@ -642,8 +655,6 @@
 
         var customMarker = 'images/icons/marker.png';
 
-        var markerInfoPrice = ['$1', '$2', '$3', '$4'];
-        var markerInfoDistance = ['45m', '12m', '55m', '100m'];
 
         function createMarker(latlng, html) {
             var marker = new google.maps.Marker({
@@ -651,7 +662,7 @@
                 map: map,
                 icon: customMarker,
                 label: {
-                  text: markerInfoPrice[1] + ',' + markerInfoDistance[0],
+                  text: locations[i].markerInfo.price + ',' + locations[i].markerInfo.distance,
                   color: 'white'
                 }
             });

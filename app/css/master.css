@@ -2300,7 +2300,7 @@ header .right-head .favourite-homes {
     display: inline-block;
     width: 26px;
     height: 25px;
-    background-image: url("../../images/heart.png"); }
+    background-image: url("../images/heart.png"); }
   header .right-head .favourite-homes > a:hover {
     -webkit-animation: loop 0.5s;
             animation: loop 0.5s; }
@@ -2371,7 +2371,7 @@ header .right-head .favourite-homes {
         position: absolute;
         width: 20px;
         height: 20px;
-        background-image: url("../../images/search.png");
+        background-image: url("../images/search.png");
         left: 18px;
         top: 50%;
         -webkit-transform: translate(0, -50%);
@@ -2493,19 +2493,19 @@ header .right-head .favourite-homes {
           height: 19px;
           position: absolute;
           z-index: 1;
-          background-image: url("../../images/like_me.png");
+          background-image: url("../images/like_me.png");
           right: 5px;
           top: 5px;
           -webkit-transition: 0.3s;
                   transition: 0.3s; }
         .scroll-area .result-items .house-list .custom-info .house-img .house_head a.liked {
-          background-image: url("../../images/house_liked.png"); }
+          background-image: url("../images/house_liked.png"); }
         .scroll-area .result-items .house-list .custom-info .house-img .house_head a:hover {
-          background-image: url("../../images/house_liked.png");
+          background-image: url("../images/house_liked.png");
           -webkit-transition: 0.3s;
                   transition: 0.3s; }
         .scroll-area .result-items .house-list .custom-info .house-img .house_head a:focus {
-          background-image: url("../../images/house_liked.png"); }
+          background-image: url("../images/house_liked.png"); }
       .scroll-area .result-items .house-list .custom-info .house-img img {
         width: 100%;
         height: 100%;
@@ -2526,7 +2526,7 @@ header .right-head .favourite-homes {
       border-bottom: 1px solid #b7b7b7; }
 
 main .container .row-flex .find-home {
-  background-image: url("../../images/main-img.jpg");
+  background-image: url("../images/main-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2576,7 +2576,7 @@ main .container .row-flex .find-home {
         position: absolute;
         width: 20px;
         height: 20px;
-        background-image: url("../../images/search.png");
+        background-image: url("../images/search.png");
         top: 50%;
         -webkit-transform: translate(0, -50%);
                 transform: translate(0, -50%);

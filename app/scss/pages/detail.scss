@@ -15,7 +15,7 @@ header {
               display: inline-block;
               width: 26px;
               height: 25px;
-              background-image: url("../../images/heart.png");
+              background-image: url("../images/heart.png");
             }
           > a:hover {
             animation: loop 0.5s;
@@ -85,7 +85,7 @@ header {
                   position: absolute;
                   width: 20px;
                   height: 20px;
-                  background-image: url("../../images/search.png");
+                  background-image: url("../images/search.png");
                   left: 18px;
                   top: 50%;
                   transform: translate(0, -50%);
@@ -233,20 +233,20 @@ header {
               height: 19px;
               position: absolute;
               z-index: 1;
-              background-image: url("../../images/like_me.png");
+              background-image: url("../images/like_me.png");
               right: 5px;
               top: 5px;
               transition: 0.3s;
             }
             a.liked {
-              background-image: url("../../images/house_liked.png");
+              background-image: url("../images/house_liked.png");
             }
             a:hover {
-              background-image: url("../../images/house_liked.png");
+              background-image: url("../images/house_liked.png");
               transition: 0.3s;
             }
             a:focus {
-              background-image: url("../../images/house_liked.png");
+              background-image: url("../images/house_liked.png");
             }
 
           }
