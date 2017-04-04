@@ -2647,14 +2647,16 @@ button:before {
       .house-review .custom-carousel #sync2 .owl-stage-outer .owl-stage .owl-item:not(:last-child) {
         margin-right: 20px; }
 
+.house-detail-page {
+  margin-top: 45px; }
+
 .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 45px; }
+          justify-content: space-between; }
   .main-content .name_price span {
     font-size: 2.6rem;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;

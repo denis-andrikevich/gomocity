@@ -163,11 +163,12 @@ button:before {
   }
 
 }
-
+.house-detail-page {
+  margin-top: 45px;
+}
 .main-content {
       display: flex;
       justify-content: space-between;
-      margin-top: 45px;
 
       .name_price  {
             span {
