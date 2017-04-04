@@ -2684,6 +2684,16 @@ button:before {
     padding-left: 40px;
     background-position: 0, 0; }
 
+.item-area {
+  margin-bottom: 55px; }
+  .item-area .tittle {
+    margin-bottom: 30px; }
+    .item-area .tittle h3 {
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      font-size: 2.6rem;
+      color: #3b3b3a;
+      font-weight: 400; }
+
 main .container .row-flex .find-home {
   background-image: url("../images/main-img.jpg");
   background-repeat: no-repeat;
