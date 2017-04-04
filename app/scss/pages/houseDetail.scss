@@ -163,3 +163,48 @@ button:before {
   }
 
 }
+
+.main-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 45px;
+
+      .name_price  {
+            span {
+                font-size: 2.6rem;
+                font-family: "Montserrat", Arial, Helvetica, sans-serif;
+                font-weight: 600;
+            }
+            span:first-child {
+                color: #aeaeae;
+              font-weight: 400;
+            }
+            p {
+                font-size: 3rem;
+                color: #40403f;
+                font-family: "Montserrat", Arial, Helvetica, sans-serif;
+                margin-top: 20px;
+            }
+      }
+      .prev_info {
+          span {
+                font-size: 2rem;
+                font-family: "Montserrat", Arial, Helvetica, sans-serif;
+          }
+          .room-ico {
+            background-image: url("../images/icons/big_bed.png");
+          }
+          .bath-ico{
+            background-image: url("../images/icons/big_res.png");
+          }
+
+          .ico {
+              width: 33px;
+              height: 20px;
+              background-size: contain;
+              margin-right: 30px;
+              padding-left: 40px;
+              background-position: 0, 0;
+          }
+      }
+}
