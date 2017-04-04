@@ -1,6 +1,38 @@
 /*---- modal window for previewing a big house pic--- ------*/
 
+.remodal-wrapper.remodal-is-opened {
+  text-align: left;
+  width: 100%;
+}
+.remodal {
+  padding: 0 !important;
+  background-color: transparent!important;
+}
 
+button.remodal-close {
+  color: #FFFFFF;
+  right: 10px;
+  top: 10px;
+  left: auto;
+}
+button.remodal-close:hover {
+  color: #FFFFFF;
+}
+button:before {
+  font-size: 3rem!important;
+}
+.remodal {
+  img {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 100%!important;
+  }
+}
 
 
 /*---- modal window for previewing a big house pic--- ------*/
