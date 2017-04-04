@@ -35,7 +35,21 @@ button:before {
 }
 
 
-/*---- modal window for previewing a big house pic--- ------*/
+/*---- end the -- modal window for previewing a big house pic--- ------*/
+
+input.search{
+  @include fontStyle('Montserrat', 1.4rem, #656565, 400);
+
+  border: 2px solid #d7d7d7;
+  border-radius: 3px;
+  padding-left: 45px;
+  padding-right: 25px;
+  height: 42px;
+  outline: none;
+  background: url('../images/search.png') no-repeat 10px center;
+}
+
+
 
 .silver-title {
   @include fontStyle('Montserrat', 2.2rem, #aeaeae, 300);
@@ -310,6 +324,41 @@ button:before {
                 margin-bottom: 10px;
             }
         }
+    }
+  }
+
+  .distance-info{
+    display: flex;
+    align-items: center;
+    @include fontStyle('Montserrat', 1.8rem, #656565, 300);
+
+    .divider{
+      width: 1px;
+      height: 35px;
+      margin-left: 30px;
+      margin-right: 30px;
+      background-color: #cccccc;
+    }
+  }
+
+  .destination-form{
+    margin-bottom: 30px;
+    display: flex;
+
+    button.green-btn{
+      height: 42px;
+      margin-right: 50px;
+      width: 85px;
+      font-size: 14px;
+    }
+
+    form{
+      display: flex;
+    }
+
+    input.search{
+      width: 620px;
+      margin-right: 10px;
     }
   }
 
