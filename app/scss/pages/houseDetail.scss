@@ -37,6 +37,44 @@ button:before {
 
 /*---- modal window for previewing a big house pic--- ------*/
 
+.silver-title {
+  @include fontStyle('Montserrat', 2.2rem, #aeaeae, 300);
+  margin-bottom: 25px;
+}
+
+.silver-block {
+  width: 250px;
+  background-color: #f4f3f3;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  padding: 20px 0 20px 25px;
+
+  ul {
+    line-height: 1.7;
+      li {
+        @include fontStyle('Montserrat', 1.6rem, #3b3b3a, 400);
+      }
+  }
+
+}
+
+.item-article p {
+  @include fontStyle('Montserrat', 1.4rem, #3b3b3a, 300);
+  max-width: 950px;
+  line-height: 1.6;
+}
+
+
+.item-article {
+   margin-left: 30px;
+}
+
+.item-article a.green{
+  text-decoration: none;
+  @include fontStyle('Montserrat', 1.4rem, #94c11f, 300);
+}
+
+
 
 .house-review {
   overflow: hidden;
@@ -165,6 +203,7 @@ button:before {
 }
 .house-detail-page {
   margin-top: 45px;
+  margin-bottom: 125px;
 }
 .main-content {
       display: flex;
@@ -213,12 +252,66 @@ button:before {
 .item-area{
   margin-bottom: 55px;
 
-  .tittle{
+  .title{
     margin-bottom: 30px;
-    
+
     h3{
       @include fontStyle('Montserrat', 2.6rem, #3b3b3a, 400);
+      color: #3b3b3a;
+      font-size: 2.6rem;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
 
     }
   }
+
+  .moregage {
+      min-width: 100%;
+      display: flex;
+
+      ul {
+        max-width: 90%;
+        border-right: 1px solid #cccccc;
+          li {
+              @include fontStyle('Montserrat', 2.6rem, #3b3b3a, 300);
+              span.green {
+                  font-weight: 600;
+              }
+          }
+      }
+
+    .filter-moregage {
+        > ul {
+          border:none;
+            li {
+              input {
+                  padding: 0 15px;
+                  border: 2px solid #d7d7d7;
+                  @include fontStyle('Montserrat', 1.4rem, #656565, 300);
+                  border-radius: 5px;
+                  min-height: 100%;
+                  min-width: 70%;
+              }
+              input:focus {
+                  outline: none;
+              }
+              .nice-select {
+                min-width: 70%;
+                @include fontStyle('Montserrat', 1.4rem, #656565, 300);
+
+                  ul.list {
+                    min-width: 100%;
+                    li {
+                        font-size: 1.4rem;
+                    }
+                }
+              }
+            }
+            >li:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+  }
+
+
 }

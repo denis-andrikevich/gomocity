@@ -2554,6 +2554,45 @@ button:before {
     max-width: 100% !important; } }
 
 /*---- modal window for previewing a big house pic--- ------*/
+.silver-title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  color: #aeaeae;
+  font-weight: 300;
+  margin-bottom: 25px; }
+
+.silver-block {
+  width: 250px;
+  background-color: #f4f3f3;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  padding: 20px 0 20px 25px; }
+  .silver-block ul {
+    line-height: 1.7; }
+    .silver-block ul li {
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+      color: #3b3b3a;
+      font-weight: 400; }
+
+.item-article p {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: #3b3b3a;
+  font-weight: 300;
+  max-width: 950px;
+  line-height: 1.6; }
+
+.item-article {
+  margin-left: 30px; }
+
+.item-article a.green {
+  text-decoration: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: #94c11f;
+  font-weight: 300; }
+
 .house-review {
   overflow: hidden;
   position: relative;
@@ -2648,7 +2687,8 @@ button:before {
         margin-right: 20px; }
 
 .house-detail-page {
-  margin-top: 45px; }
+  margin-top: 45px;
+  margin-bottom: 125px; }
 
 .main-content {
   display: -webkit-box;
@@ -2686,13 +2726,57 @@ button:before {
 
 .item-area {
   margin-bottom: 55px; }
-  .item-area .tittle {
+  .item-area .title {
     margin-bottom: 30px; }
-    .item-area .tittle h3 {
+    .item-area .title h3 {
       font-family: "Montserrat", Arial, Helvetica, sans-serif;
       font-size: 2.6rem;
       color: #3b3b3a;
-      font-weight: 400; }
+      font-weight: 400;
+      color: #3b3b3a;
+      font-size: 2.6rem;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif; }
+  .item-area .moregage {
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .item-area .moregage ul {
+      max-width: 90%;
+      border-right: 1px solid #cccccc; }
+      .item-area .moregage ul li {
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: 2.6rem;
+        color: #3b3b3a;
+        font-weight: 300; }
+        .item-area .moregage ul li span.green {
+          font-weight: 600; }
+    .item-area .moregage .filter-moregage > ul {
+      border: none; }
+      .item-area .moregage .filter-moregage > ul li input {
+        padding: 0 15px;
+        border: 2px solid #d7d7d7;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        color: #656565;
+        font-weight: 300;
+        border-radius: 5px;
+        min-height: 100%;
+        min-width: 70%; }
+      .item-area .moregage .filter-moregage > ul li input:focus {
+        outline: none; }
+      .item-area .moregage .filter-moregage > ul li .nice-select {
+        min-width: 70%;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        color: #656565;
+        font-weight: 300; }
+        .item-area .moregage .filter-moregage > ul li .nice-select ul.list {
+          min-width: 100%; }
+          .item-area .moregage .filter-moregage > ul li .nice-select ul.list li {
+            font-size: 1.4rem; }
+      .item-area .moregage .filter-moregage > ul > li:not(:last-child) {
+        margin-bottom: 10px; }
 
 main .container .row-flex .find-home {
   background-image: url("../images/main-img.jpg");
