@@ -209,3 +209,16 @@ button:before {
           }
       }
 }
+
+.item-area{
+  margin-bottom: 55px;
+
+  .tittle{
+    margin-bottom: 30px;
+    
+    h3{
+      @include fontStyle('Montserrat', 2.6rem, #3b3b3a, 400);
+
+    }
+  }
+}
