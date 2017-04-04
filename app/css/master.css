@@ -2753,7 +2753,8 @@ input.search {
     min-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 60px; }
     .item-area .moregage ul {
       max-width: 90%;
       border-right: 1px solid #cccccc; }
@@ -2824,6 +2825,69 @@ input.search {
     .item-area .destination-form input.search {
       width: 620px;
       margin-right: 10px; }
+  .item-area .seller-form {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .item-area .seller-form .seller-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .item-area .seller-form .seller-info ul {
+        min-width: 240px;
+        line-height: 2; }
+        .item-area .seller-form .seller-info ul li span {
+          font-family: "Montserrat", Arial, Helvetica, sans-serif;
+          font-size: 1.6rem;
+          color: #3b3b3a;
+          font-weight: 300; }
+        .item-area .seller-form .seller-info ul li span:last-child {
+          -ms-flex-item-align: end;
+              align-self: flex-end; }
+      .item-area .seller-form .seller-info ul:last-child {
+        margin-left: 65px; }
+    .item-area .seller-form .silver-block {
+      width: 630px;
+      height: 260px;
+      padding: 15px; }
+      .item-area .seller-form .silver-block input {
+        padding: 0 15px;
+        border: 2px solid #d7d7d7;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        color: #656565;
+        font-weight: 300;
+        border-radius: 5px;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 20px; }
+      .item-area .seller-form .silver-block input:focus {
+        outline: none; }
+      .item-area .seller-form .silver-block textarea {
+        width: 375px;
+        height: 160px;
+        border: 2px solid #d7d7d7;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        color: #656565;
+        font-weight: 300;
+        border-radius: 5px;
+        padding: 10px 15px;
+        resize: none; }
+      .item-area .seller-form .silver-block textarea:focus {
+        outline: none; }
+      .item-area .seller-form .silver-block .submit-data {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0 15px;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        .item-area .seller-form .silver-block .submit-data button {
+          height: 43px;
+          width: 94px;
+          font-size: 14px; }
 
 main .container .row-flex .find-home {
   background-image: url("../images/main-img.jpg");

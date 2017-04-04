@@ -281,6 +281,7 @@ input.search{
   .moregage {
       min-width: 100%;
       display: flex;
+      margin-bottom: 60px;
 
       ul {
         max-width: 90%;
@@ -361,6 +362,75 @@ input.search{
       margin-right: 10px;
     }
   }
+
+  .seller-form {
+    justify-content: space-between;
+
+    .seller-info {
+      display: flex;
+      ul {
+        min-width: 240px;
+        line-height: 2;
+        li {
+          span {
+            @include fontStyle('Montserrat', 1.6rem, #3b3b3a, 300);
+          }
+          span:last-child {
+            align-self: flex-end;
+          }
+
+        }
+      }
+      ul:last-child {
+        margin-left: 65px;
+      }
+    }
+
+    .silver-block {
+      width: 630px;
+      height: 260px;
+      padding: 15px;
+
+        input {
+          padding: 0 15px;
+          border: 2px solid #d7d7d7;
+          @include fontStyle('Montserrat', 1.4rem, #656565, 300);
+          border-radius: 5px;
+          height: 40px;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        input:focus {
+            outline: none;
+        }
+        textarea {
+            width: 375px;
+            height: 160px;
+            border: 2px solid #d7d7d7;
+            @include fontStyle('Montserrat', 1.4rem, #656565, 300);
+            border-radius: 5px;
+            padding: 10px 15px;
+            resize: none;
+        }
+        textarea:focus {
+            outline: none;
+        }
+      .submit-data {
+        display: flex;
+        padding: 0 15px;
+        justify-content: flex-end;
+
+          button {
+            height: 43px;
+            width: 94px;
+            font-size: 14px;
+          }
+      }
+    }
+
+  }
+
+
 
 
 }
