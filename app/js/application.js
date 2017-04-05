@@ -1,7 +1,15 @@
 /**================================================
  JS : MY CUSTOM SCRIPTS
  ===================================================*/
+$(document).on('click', '#plus_size', function () {
+  var imgSrc = $('#sync1').find('.owl-item.active img').attr('src');
+  console.log(imgSrc);
+  $('.remodal').find('img').attr('src', imgSrc);
+});
+
 $(document).ready(function () {
+
+
   $('select').niceSelect();
 
   //range slider
@@ -123,9 +131,7 @@ $(document).ready(function () {
     sync1.data('owl.carousel').to(number, 300, true);
   });
 
-  $("#plus_size").click(function () {
 
-  })
 
 
 });
