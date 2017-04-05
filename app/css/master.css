@@ -2268,6 +2268,33 @@ SMACSS: LAYOUT - FOOTER
 .ui-corner-all {
   border-radius: 4px; }
 
+footer {
+  height: 90px;
+  width: 100%;
+  background-color: #3b3b3a;
+  padding: 15px 0 20px; }
+  footer .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    footer .footer-content h6.copyright {
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+      color: #8e8e8e;
+      font-weight: 400;
+      margin-top: 10px; }
+    footer .footer-content h4.number {
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      font-size: 2.5rem;
+      color: #8e8e8e;
+      font-weight: 300; }
+
 @-webkit-keyframes loop {
   0% {
     -webkit-transform: scale(1);

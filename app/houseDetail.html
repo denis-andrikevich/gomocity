@@ -340,6 +340,27 @@
     <!--MODAL WINDOW TO SHOW BIG HOUSE PIC-->
 
   </main>
+
+  <footer>
+      <div class="container">
+            <div class="footer-content">
+              <div>
+                  <div class="footer-logo">
+                    <a href="index.html">
+                      <img src="images/footer-logo.png" alt="">
+                    </a>
+                    <h6 class="copyright">Copyright © 2017 Gomocity, Inc. All rights reserved.</h6>
+                  </div>
+              </div>
+              <div>
+                  <h4 class="number">
+                    999-625-555
+                  </h4>
+              </div>
+            </div>
+      </div>
+  </footer>
+
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCoCOv2GhNGDj2tGKSkF-nDlfRL0POegjs"></script>
 <script src="js/jquery-3.2.0.min.js"
@@ -367,7 +388,7 @@
     $('#map-form').submit(function (e) {
       e.preventDefault();
       GetRoute();
-    })
+    });
 
     var mapStyles = [
       {
@@ -616,7 +637,7 @@
         icon: '../images/icons/bed.png',
         map: map
       });
-    };
+    }
   })
 </script>
 

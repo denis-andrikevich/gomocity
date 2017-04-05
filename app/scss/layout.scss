@@ -33,8 +33,8 @@ SMACSS: LAYOUT - FOOTER
 .ui-slider .ui-slider-handle {
     position: absolute;
     z-index: 2;
-    width: 15px;   
-    height: 15px; 
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 2px solid #94c11f;
     background-color: #fff;
@@ -61,7 +61,7 @@ SMACSS: LAYOUT - FOOTER
 
 /* позиционируем ползунки */
 
-.ui-slider-horizontal .ui-slider-handle { 
+.ui-slider-horizontal .ui-slider-handle {
     top: -8px;
     margin-left: -6px;
 }
@@ -71,7 +71,7 @@ SMACSS: LAYOUT - FOOTER
     height: 100%;
 }
 
-.ui-slider-horizontal .ui-slider-range-min { 
+.ui-slider-horizontal .ui-slider-range-min {
     left: 0;
 }
 
@@ -81,14 +81,14 @@ SMACSS: LAYOUT - FOOTER
 
 /* оформление полосы по которой ходит ползунок */
 
-.ui-widget-content { 
+.ui-widget-content {
     border: 3px solid #e1e1e1;
     background: #e1e1e1;
 }
 
 /* оформление активного участка (между двумя ползунками) */
 
-.ui-widget-header { 
+.ui-widget-header {
     border: 1px solid #D4D4D4;
     background: #94c11f;
 }
@@ -99,3 +99,26 @@ SMACSS: LAYOUT - FOOTER
     border-radius: 4px;
 }
 
+
+footer {
+    height: 90px;
+    width: 100%;
+    background-color: #3b3b3a;
+    padding: 15px 0 20px;
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h6.copyright {
+        @include fontStyle('Montserrat', 1.1rem, #8e8e8e, 400);
+        margin-top: 10px;
+      }
+
+      h4.number {
+        @include fontStyle('Montserrat', 2.5rem, #8e8e8e, 300);
+      }
+    }
+
+}
