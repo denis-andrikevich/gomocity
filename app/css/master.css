@@ -2491,48 +2491,6 @@ header .right-head .favourite-homes {
       height: 207px;
       overflow: hidden;
       position: relative; }
-      .scroll-area .result-items .house-list .custom-info .house-img .house_head {
-        position: absolute;
-        padding: 2px;
-        width: 100%; }
-        .scroll-area .result-items .house-list .custom-info .house-img .house_head .sign_new {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          position: absolute;
-          z-index: 1;
-          width: 62px;
-          height: 24px;
-          border-radius: 3px;
-          background-color: rgba(148, 193, 3, 0.7);
-          font-family: "Montserrat", Arial, Helvetica, sans-serif;
-          font-size: 1.2rem;
-          color: #ffffff;
-          font-weight: 400; }
-        .scroll-area .result-items .house-list .custom-info .house-img .house_head a.house_like {
-          width: 20px;
-          height: 19px;
-          position: absolute;
-          z-index: 1;
-          background-image: url("../images/like_me.png");
-          right: 5px;
-          top: 5px;
-          -webkit-transition: 0.3s;
-                  transition: 0.3s; }
-        .scroll-area .result-items .house-list .custom-info .house-img .house_head a.liked {
-          background-image: url("../images/house_liked.png"); }
-        .scroll-area .result-items .house-list .custom-info .house-img .house_head a:hover {
-          background-image: url("../images/house_liked.png");
-          -webkit-transition: 0.3s;
-                  transition: 0.3s; }
-        .scroll-area .result-items .house-list .custom-info .house-img .house_head a:focus {
-          background-image: url("../images/house_liked.png"); }
       .scroll-area .result-items .house-list .custom-info .house-img img {
         width: 100%;
         height: 100%;
@@ -2551,6 +2509,49 @@ header .right-head .favourite-homes {
       padding: 0  0 25px 0;
       margin-bottom: 40px;
       border-bottom: 1px solid #b7b7b7; }
+
+.house_head {
+  position: absolute;
+  padding: 2px;
+  width: 100%; }
+  .house_head .sign_new {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 62px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: rgba(148, 193, 3, 0.7);
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 400; }
+  .house_head a.house_like {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    z-index: 1;
+    background-image: url("../images/like_me.png");
+    right: 5px;
+    top: 5px;
+    -webkit-transition: 0.3s;
+            transition: 0.3s; }
+  .house_head a.liked {
+    background-image: url("../images/house_liked.png"); }
+  .house_head a:hover {
+    background-image: url("../images/house_liked.png");
+    -webkit-transition: 0.3s;
+            transition: 0.3s; }
+  .house_head a:focus {
+    background-image: url("../images/house_liked.png"); }
 
 /*---- modal window for previewing a big house pic--- ------*/
 .remodal-wrapper.remodal-is-opened {
@@ -2915,6 +2916,54 @@ input.search {
           height: 43px;
           width: 94px;
           font-size: 14px; }
+
+.container .house-detail-slider {
+  margin-bottom: 50px;
+  position: relative; }
+  .container .house-detail-slider .item-area {
+    margin: 0;
+    position: absolute;
+    padding-top: 15px; }
+    .container .house-detail-slider .item-area .title {
+      margin: 0;
+      position: absolute;
+      white-space: nowrap; }
+  .container .house-detail-slider .owl-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .container .house-detail-slider .owl-carousel .owl-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 190px; }
+      .container .house-detail-slider .owl-carousel .owl-nav .owl-prev, .container .house-detail-slider .owl-carousel .owl-nav .owl-next {
+        width: 28px;
+        height: 28px;
+        border: 2px solid #94c11f;
+        border-radius: 3px;
+        background-color: transparent;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .container .house-detail-slider .owl-carousel .owl-nav .owl-prev i, .container .house-detail-slider .owl-carousel .owl-nav .owl-next i {
+          color: #94c11f; }
+      .container .house-detail-slider .owl-carousel .owl-nav .disabled {
+        border: 2px solid #cccccc; }
+        .container .house-detail-slider .owl-carousel .owl-nav .disabled i {
+          color: #cccccc; }
+    .container .house-detail-slider .owl-carousel .item .one_item .house-img img {
+      height: 100%; }
 
 main .container .row-flex .find-home {
   background-image: url("../images/main-img.jpg");

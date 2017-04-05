@@ -429,8 +429,63 @@ input.search{
     }
 
   }
+}
 
+.container {
+    .house-detail-slider {
+          margin-bottom: 50px;
+          position: relative;
 
+            .item-area {
+              margin: 0;
+              position: absolute;
+              padding-top: 15px;
+              .title {
+                  margin:0;
+                  position: absolute;
+                  white-space: nowrap;
+              }
+            }
 
+          .owl-carousel {
+            display: flex;
+            flex-direction: column-reverse;
 
+            .owl-nav  {
+              display: flex;
+              padding-left: 190px;
+
+              .owl-prev, .owl-next {
+                  width: 28px;
+                  height: 28px;
+                  border: 2px solid #94c11f;
+                  border-radius: 3px;
+                  background-color: transparent;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  i{
+                    color: #94c11f;
+                  }
+              }
+              .disabled {
+                border: 2px solid #cccccc;
+                 i {
+                   color: #cccccc;
+                 }
+              }
+
+            }
+              .item {
+                  .one_item {
+                    .house-img {
+                        img {
+                            height: 100%;
+                        }
+                    }
+                  }
+              }
+          }
+    }
 }

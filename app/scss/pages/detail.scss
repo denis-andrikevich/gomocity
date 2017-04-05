@@ -210,46 +210,7 @@ header {
           overflow: hidden;
           position: relative;
 
-          .house_head {
-            position: absolute;
-            padding: 2px;
-            width: 100%;
 
-            .sign_new {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              position: absolute;
-              z-index: 1;
-              width: 62px;
-              height: 24px;
-              border-radius: 3px;
-              background-color: rgba(148, 193,3, 0.7);
-              @include fontStyle('Montserrat', 1.2rem, #ffffff, 400);
-            }
-
-            a.house_like {
-              width: 20px;
-              height: 19px;
-              position: absolute;
-              z-index: 1;
-              background-image: url("../images/like_me.png");
-              right: 5px;
-              top: 5px;
-              transition: 0.3s;
-            }
-            a.liked {
-              background-image: url("../images/house_liked.png");
-            }
-            a:hover {
-              background-image: url("../images/house_liked.png");
-              transition: 0.3s;
-            }
-            a:focus {
-              background-image: url("../images/house_liked.png");
-            }
-
-          }
 
           img {
             width: 100%;
@@ -282,3 +243,44 @@ header {
 
 
 
+
+.house_head {
+  position: absolute;
+  padding: 2px;
+  width: 100%;
+
+  .sign_new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 62px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: rgba(148, 193,3, 0.7);
+    @include fontStyle('Montserrat', 1.2rem, #ffffff, 400);
+  }
+
+  a.house_like {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    z-index: 1;
+    background-image: url("../images/like_me.png");
+    right: 5px;
+    top: 5px;
+    transition: 0.3s;
+  }
+  a.liked {
+    background-image: url("../images/house_liked.png");
+  }
+  a:hover {
+    background-image: url("../images/house_liked.png");
+    transition: 0.3s;
+  }
+  a:focus {
+    background-image: url("../images/house_liked.png");
+  }
+
+}
